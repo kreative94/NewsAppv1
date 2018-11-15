@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp">
+
+    <!--Category-->
+    <TextView
+        android:id="@+id/category_textview"
+        style="@style/categoryTag"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:paddingEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical">
+
+        <!--Title-->
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/title"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="20sp" />
+
+        <!--Author and Date-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <!--Author-->
+            <TextView
+                android:id="@+id/author_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/author"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/textColorPrimaryLighter"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp" />
+
+            <!--Date-->
+            <TextView
+                android:id="@+id/date_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="@color/textColorPrimaryLighter"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
